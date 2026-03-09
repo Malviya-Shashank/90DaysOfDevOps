@@ -1,0 +1,19 @@
+---
+Name: shashank Malviya
+role: DevOps Engineer & Cloud Engineer
+experience_years: 4
+learning: "true"
+# list 
+tools:
+  - YAML
+  - AWS
+  - Kubernetes
+  - Terraform
+  - GitHub
+  - Jenkins
+  - Amazon Q
+  - Python
+# a list using the inline format
+hobbies: [ watching  movies, playing cricket,travel ]
+
+---

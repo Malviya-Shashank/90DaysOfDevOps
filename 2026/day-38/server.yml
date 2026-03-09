@@ -1,0 +1,30 @@
+# server with nested keys: name, ip, port
+server:
+  name: primary-server
+  ip: 192.168.1.10
+  port: 8080
+
+# database with nested keys: host, name, credentials (nested further: user, password)  
+database:
+  host: db.example.com
+  name: production_db
+  credentials:
+    user: admin
+    password: securepassword123
+
+# | block style (preserves newlines)
+startup_script: |
+  #!/bin/bash
+  echo "Starting server..."
+  # This is a comment within the script
+  /usr/bin/my_application --start
+   echo "Server started."
+
+# > fold style (folds into one line)
+script: >
+  #!/bin/bash
+  echo "Starting server and performing some maintenance tasks in a single line string."
+  # The newlines in the YAML file will be converted to single spaces.
+  /usr/bin/my_application --start
+
+    
